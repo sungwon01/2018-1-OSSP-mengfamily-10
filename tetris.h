@@ -83,6 +83,7 @@ typedef struct
      int next;
      int pos;
      int x, y;
+     int bag[7];
      Bool last_move;
 } shape_t;
 

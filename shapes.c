@@ -294,7 +294,7 @@ shape_unset2(void)
 
 
 void
-shape_new(void)
+shape_new(int bag_next)
 {
      int i;
 
@@ -309,10 +309,11 @@ shape_new(void)
         새로운 Shape를 만드는 함수이기 때문에 current.x값을 1로 설정해준다.
         다음 next 값은 0~7 사이의 무작위 정수로 설정된다.
      */
+
      current.num = current.next;
      current.x = 1; // 새로운 블록이 생성되는 위치
      current.y = (FRAMEW / 2) - 1;
-     current.next = nrand(0, 6);
+     current.next = bag_next;
      // current.next = nrand(0, 8);을 하면 투명 블록이 생성된다.
      /* 다음 블록을 표시해주는 프레임을 초기화시킨다 */
      frame_nextbox_refresh();
@@ -325,6 +326,24 @@ shape_new(void)
                frame[1][i] = 0;
 
      return;
+}
+
+void set_bag() {
+     int i, n;
+     int check[7] = {0, };
+
+     for(i = 0; i < 7; i++){
+          while(1) {
+               n = nrand(0, 6);
+               if(check[n] == 0) break;
+          }
+          check[n] = 1;
+          current.bag[i] = n;
+     }
+
+     for(i = 0; i < 7; i++) {
+          shape_new(current.bag[i]);
+     }
 }
 
 void 
@@ -412,7 +431,8 @@ shape_go_down(void)
      else
           if(current.x > 2){
          //printf("semi done\n");
-              shape_new();
+              set_bag();
+               //shape_new();
      }
           /*
 		current.x값이 1이거나 그보다 작다면, Shape가 이동하지 않은 것
@@ -421,7 +441,8 @@ shape_go_down(void)
           else
           {
             //  printf("shapegodownRUNNING FALSE\n");
-               shape_new();
+               set_bag();
+               //shape_new();
                frame_refresh();
                sleep(2);
                running = False;
