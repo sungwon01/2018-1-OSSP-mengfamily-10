@@ -10,6 +10,7 @@ include_directories(${SDL2_INCLUDE_DIRS})
 add_executable(2017_2_OSSP_Dongguk_Banjeom_4_master
         audio.c
         audio.h
+        buffer.h
         config.h
         frame.c
         shapes.c

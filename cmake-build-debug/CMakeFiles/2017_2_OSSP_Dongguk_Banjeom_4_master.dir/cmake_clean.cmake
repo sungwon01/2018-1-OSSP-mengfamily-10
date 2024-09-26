@@ -1,12 +1,16 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/audio.c.o"
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/frame.c.o"
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/shapes.c.o"
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/tetris.c.o"
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/util.c.o"
-  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/client.c.o"
-  "2017_2_OSSP_Dongguk_Banjeom_4_master.pdb"
   "2017_2_OSSP_Dongguk_Banjeom_4_master"
+  "2017_2_OSSP_Dongguk_Banjeom_4_master.pdb"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/audio.c.o"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/audio.c.o.d"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/frame.c.o"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/frame.c.o.d"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/shapes.c.o"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/shapes.c.o.d"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/tetris.c.o"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/tetris.c.o.d"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/util.c.o"
+  "CMakeFiles/2017_2_OSSP_Dongguk_Banjeom_4_master.dir/util.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

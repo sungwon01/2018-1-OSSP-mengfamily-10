@@ -8,4 +8,4 @@ router.use('/', require('./board/index.js'));		// ip:3000/
 module.exports = router;
 
 //---------------------------------------------LSM's Index
-router.use('/chat', require('./chat/index.js');
+router.use('/chat', require('./chat/index.js'));

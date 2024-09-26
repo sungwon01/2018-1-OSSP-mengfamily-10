@@ -157,7 +157,7 @@ pthread_mutex_t locInfo;
 //int whichThread[2] = {0, 1};
 ///* Variables */
 
-const int shapes[10][4][5][2];
+const int shapes[7][4][5][2];
 struct itimerval tv;
 struct termios back_attr;
 shape_t current;
